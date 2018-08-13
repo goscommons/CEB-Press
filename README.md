@@ -1,5 +1,5 @@
 # CEB-Brick press
-![Dual-Axis-Gimbal-System](/images/001.jpg)
+![CEB-Brick pressing](/images/001.jpg)
 ## Highlights
 The Liberator is OSE's automatic, high throughput Compressed Earth Brick Press. It is named The Liberator because it is intended to free people from the single highest cost of living - housing. See Cost of Living and GVCS Naming Convention.
 ## Sepcifications
@@ -21,9 +21,8 @@ The Liberator is OSE's automatic, high throughput Compressed Earth Brick Press. 
 3'x6' grate for loading the machine with a tractor. Includes soil deflectors
 
 ## Replicate the machine
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-![Fast Diagram Example](http://www.valueanalysis.ca/images/en/FAST_Diagram.JPG)
+- [] Make a fabrication file explaining step by steps and pointing to relevant references
+- [] Point to the BOM
 
 ## References
 [FAST diagram](http://www.valueanalysis.ca/fast.php)
