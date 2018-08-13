@@ -1,15 +1,31 @@
-# Welcome to this open source project
-This repository has specific structure inspired in the [open hardware repository project structure guidelines](https://www.ohwr.org/projects/ohr-support/wiki/project-structure-guidelines). It has been also provided and organized by GO!Commons a community and initiative focused on the role of open source to accelerate sustainable development and deliver economic empower to producers, and commoners.
+# Open Source Dual Axis Gimbal System
+![Dual-Axis-Gimbal-System](/images/001.jpg)
+## Highlights
+The Liberator is OSE's automatic, high throughput Compressed Earth Brick Press. It is named The Liberator because it is intended to free people from the single highest cost of living - housing. See Cost of Living and GVCS Naming Convention.
+## Sepcifications
+- Block is plain block, not interlocking. Please see discussion on Interlocking_bricks
+- Version 17.08 is our most current model. See CEB Press Genealogy for past versions.
+- Open source hardware, controller, and software (CC-BY-SA 4.0, GPLv3)
+- Controller includes automatic pressing and manual mode
+- Does NOT come with a power source - it is powered by a hydraulic power source, such as by our Power Cube or a - tractor hydraulic take-off.
+- Full size bricks are 4"x6"x12", plain flat-faced bricks
+- Brick height is adjustable from 2"-4"
+- Brick dimensional variations: +/- 1/16". This assumes uniform soil. Soil uniformity will determine height uniformity of brick.
+- 6 full-sized bricks per minute at 14 gallon per minute hydraulic flow. Brick pressing rate will increase with a higher hydraulic flow, up to the maximum rated flow of the hydraulic solenoid. Hydraulic solenoid valve is rated for a maximum of 30 gpm fluid flow at 3000PSI.
+- Fuel consumption with Power Cube running at 14 gpm fluid flow - about 1 gallon per hour
+- System hydraulic pressure - 2300 psi
+- Comes with hydraulic quick couplers ready to be connected to a power source
+- Weight - 1700 lb
+- Moving: brick press is moved with forks. Footprint (with legs in the inner position) allows machine to be placed in the bed of a 3/4 ton pickup. It has adjustable legs for uneven terrain. Machine can be moved around on a trailer (not included)
+- Material cost: $3000-$6500 depending on suppliers; manual machine (without hydraulic solenoid, machine costs $1000 less in materials. Production cost for a full kit: US$5000 above the bill of materials/supplies/consumables cost, paid by the buyer.
+3'x6' grate for loading the machine with a tractor. Includes soil deflectors
 
-## About the structure and organization of the repository
-The wiki is a very important part of the documentation structure of this repo. It will give you a quick introduction to the particularities of this design, how it is used, how it works, why it exists, but also the functional description of it etc.
-### For users
-If you are interested in understanding how this machine/product works, you can learn from reading the documentation. If you want to use the files in your projects, and make your own redesigns you are also welcome. Make sure to read the rights and attributions you have as a user in the [LICENSE.md](LICENSE.md).
+## Replicate the machine
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-### For contributors
-If you want to learn open source by doing things, and you are interested in participating in this project in particular. Contact us or leave a comment on the #issues you are interested in participating. Some issues are for advanced developers others, are for beginners.
+![Fast Diagram Example](http://www.valueanalysis.ca/images/en/FAST_Diagram.JPG)
 
-**don't be shy, we encourage that people partner up, and we also promote that experience people play a mentor role so that others can grow as well**
+## References
+[FAST diagram](http://www.valueanalysis.ca/fast.php)
 
-#### You can see the different roles in the GO!Commons canvas, where we lay out the different roles that can participate. If you think your role is not captured or expressed, also feel free to reach out. You can also select the one that you fill more close to and start learning and finding your own contributor profile along the way.!!
-![GO!Commons Canvas](OpenCanvas.png)
+Put here a list of references and links you think it might be interesting
