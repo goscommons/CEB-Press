@@ -2,7 +2,7 @@
 ![CEB-Brick pressing](/images/001.jpg)
 ## Highlights
 The Liberator is OSE's automatic, high throughput Compressed Earth Brick Press. It is named The Liberator because it is intended to free people from the single highest cost of living - housing. See Cost of Living and GVCS Naming Convention.
-## Sepcifications
+## Specifications
 - Block is plain block, not interlocking. Please see discussion on Interlocking_bricks
 - Version 17.08 is our most current model. See CEB Press Genealogy for past versions.
 - Open source hardware, controller, and software (CC-BY-SA 4.0, GPLv3)
