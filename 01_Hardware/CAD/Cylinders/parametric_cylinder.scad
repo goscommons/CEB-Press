@@ -24,10 +24,8 @@ cm=10;
 
 
 module hydraulic_cylinder(unit,stroke,bore,extended,a,b,c,d,e,sae,rod){
-/* the current model is:216-380
-    
-    
-    */
+
+// the current model is:216-380
     bore=bore*unit;
     a=a*unit;// general length of the cylinder 
     b=b*unit;
@@ -37,8 +35,10 @@ module hydraulic_cylinder(unit,stroke,bore,extended,a,b,c,d,e,sae,rod){
     bore=bore*unit;//
     stroke=stroke*unit;
     sae=sae*unit;
-    rod=rod*unit;
     tube_l=a+stroke-b;
+    rod=rod*unit;
+    rod_l=a+stroke-b;
+    
    
     color("red")
     //cylinder(r=bore/2,h=a,$fn=50,center=true);
@@ -47,7 +47,7 @@ module hydraulic_cylinder(unit,stroke,bore,extended,a,b,c,d,e,sae,rod){
     
     // Parameters for hydraulic connections
     //SEA connection port dimension
-    connector=unit;//*[] change this
+   
     module h_connection(){   
         translate([0,bore/2,0])
         rotate([90,90,0])
@@ -67,13 +67,14 @@ module hydraulic_cylinder(unit,stroke,bore,extended,a,b,c,d,e,sae,rod){
     
     //cylinder rod    
     module h_cylinder(){
+        translate([0,0,b])
         difference(){
-        cylinder(h=stroke,r=rod/2,$fn=50, center=true);
+        cylinder(h=rod_l,r=rod/2,$fn=50, center=true);
         
         //custom made hole
         color("lime")
         rotate([90,0,0])
-        translate([0,stroke/2-(stroke*1/6),0])
+        translate([0,rod_l/2-(rod_l*1/10),0])
         cylinder(r=10,h=bore*3,center=true);
         }
     }
@@ -84,8 +85,8 @@ module hydraulic_cylinder(unit,stroke,bore,extended,a,b,c,d,e,sae,rod){
     }
     //unextend
     else{
-        translate([0,0,b])h_cylinder(); 
-        h_cylinder();
+        translate([0,0,])
+        h_cylinder(); 
         }
     // Outer body
     
@@ -95,7 +96,7 @@ hydraulic_cylinder(
     in,//units
     8,//Stroke
     5,//bore
-    true,// for extended set true, for not extended false
+    false,// for extended set true, for not extended false
     9.25,// a= size of the full cylinder
     1.875,//b= offset of the cylinder rod with respect to the tube 
     3.375,//c= upper place
@@ -103,4 +104,7 @@ hydraulic_cylinder(
     0.375,//tubing wall
     0.7,//sae
     2.75);//rod size
+    
+    
+
   
