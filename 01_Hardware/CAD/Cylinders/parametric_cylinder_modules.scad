@@ -1,7 +1,8 @@
-/*
-
-
-*/
+a= 90;// a = connector widthness
+b= 10;// b = connector thickness
+c=50;// c = height of the cube *[]this needs to be improved
+d=50;// d = hole
+e=100;// e = depth 
     
 module connector_01(a,b,c,d,e){
     module bb_02(){
@@ -22,12 +23,14 @@ module connector_01(a,b,c,d,e){
 }
 
 //translate([0,0,210])
-color("red")connector_01(
+/*color("red")connector_01(
 90,// a = connector widthness
 10,// b = connector thickness
 50,// c = height of the cube *[]this needs to be improved
 50,// d = hole
 100// e = depth
-); 
+);*/ 
 
+
+connector_01(a,b,c,d,e);
 

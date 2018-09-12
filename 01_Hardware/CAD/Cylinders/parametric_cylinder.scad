@@ -16,15 +16,42 @@ References:
 
 */
 
-use <parametric_cylinder_modules.scad>;
+//-[]* under certain conditions load certain modules
 
 //mm is the standard unit
+// slider widget for number with max. value
+sliderWithMax =34; // [50]
 
-in=25.4;//inch=25.4mmm
-cm=10;
+// slider widget for number in range
+sliderWithRange =34; // [10:100]
+
+//step slider for number
+stepSlider=2; //[0:5:100]
+
+// slider widget for number in range
+sliderCentered =0; // [-10:0.1:10]
 
 
-module hydraulic_cylinder(model,unit,stroke,bore,extended,a,b,c,d,e,sae,rod){
+unit=25.4;//[] inch=25.4mmm
+model="002"; // cylinder model
+stroke=8;//Stroke
+bore=5;//bore
+extended=true;// for extended set true, for not extended false
+a= 9.25;// a= size of the full cylinder
+b= 1.875;//b= offset of the cylinder rod with respect to the tube
+c= 3.375;//c= upper place
+d= 2;//d= lower port place
+e= 0.375;//tubing wall
+sae= 0.7;//sae
+rod=2.75;//rod size
+
+//include <parametric_cylinder_modules.scad>
+if (model=="001"){
+ //include <parametric_cylinder_modules.scad>
+}
+
+
+module hydraulic_cylinder(model,unit,stroke,bore,extended,a,b,c,d,e,port,rod){
 
 // the current model is:216-380
     bore=bore*unit;
@@ -115,8 +142,8 @@ module hydraulic_cylinder(model,unit,stroke,bore,extended,a,b,c,d,e,sae,rod){
 
     }
 
-
-hydraulic_cylinder(
+hydraulic_cylinder(model,unit,stroke,bore,extended,a,b,c,d,e,sae,rod);
+/*hydraulic_cylinder(
     "002", // cylinder model
     in,//units
     8,//Stroke
@@ -128,4 +155,4 @@ hydraulic_cylinder(
     2,//d= lower port place
     0.375,//tubing wall
     0.7,//sae
-    2.75);//rod size
+    2.75);//rod size*/
